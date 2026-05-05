@@ -1,16 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus
-      laborum facilis sit, eaque sequi ipsam atque pariatur sunt, sed eos
-      impedit nemo autem ex repellendus, fugit exercitationem cum ipsum.
-    </p>
-  </body>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div id="loginBox">
+    <h2>Login</h2>
+    <input type="text" id="loginUser" placeholder="Email">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button id="loginBtn">Login</button>
+
+    <p class="link" id="goRegister">Yangi login yaratish</p>
+    <p id="loginMsg" class="message"></p>
+  </div>
+
+  <div id="registerBox" class="hidden">
+    <h2>Register</h2>
+    <input type="text" id="regUser" placeholder="Email">
+    <input type="password" id="regPass" placeholder="Password">
+    <button id="registerBtn">Ro‘yxatdan o‘tish</button>
+
+    <p class="link" id="goLogin">Login ga qaytish</p>
+    <p id="regMsg" class="message"></p>
+  </div>
+
+  <div id="dashboardBox" class="hidden">
+    <h2>Welcome 🎉</h2>
+    <p id="userInfo"></p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
 </html>
